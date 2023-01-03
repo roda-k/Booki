@@ -11,20 +11,47 @@
   <title>Booki</title>
 </head>
 
-<body>
-  <header>
-    <img src="assets/Images Booki/logo/Booki.png" alt="Logo Booki" >
+<body class="bookie-body">
+  <header class="header">
+    <img src="assets/imagesBooki/logo/Booki.png" alt="Logo Booki" class="booki-logo">
     <nav>
-      <ul class="pages">
-        <li><a href="#">Hébergements</a></li>
-        <li><a href="#">Activités</a></li>
+      <ul class="navlist">
+        <li class="currentpage"><a href="#" class="links">Hébergements</a></li>
+        <li class="currentpage"><a href="#" class="links">Activités</a></li>
       </ul>
     </nav>
   </header>
-  <main>
+  <main class="main-container">
     <section>
-        <h1>Trouvez votre hébergment pour des vacances de rêve</h1>
-        <p>En plein centre ville ou en pleine nature</p>
+      <h1>Trouvez votre hébergment pour des vacances de rêve</h1>
+      <p>En plein centre ville ou en pleine nature</p>
+      <div class="search-bar">
+        <div class="geoloc-button"><i class="fa-solid fa-location-dot"></i></div>
+        <form action="" method="get" class="search-bar">
+          <input type="text" name="submitLocation" value="Marseille, France" id="submitLocation"
+            class="submit-location">
+          <button class="submit-button">Rechercher</button>
+        </form>
+      </div>
+      <div class="filters">
+        <p>Filtres</p>
+        <div class="filter-button">
+          <i class="fa-solid fa-money-bill-wave"></i>
+          <span>Economique</span>
+        </div>
+        <div class="filter-button">
+          <i class="fa-solid fa-person"></i>
+          <span>Familial</span>
+        </div>
+        <div class="filter-button">
+          <i class="fa-solid fa-heart"></i>
+          <span>Romantique</span>
+        </div>
+        <div class="filter-button">
+          <i class="fa-solid fa-dog"></i>
+          <span>Animaux autorisés</span>
+        </div>
+      </div>
     </section>
     <section>
       <article></article>
