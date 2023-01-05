@@ -10,6 +10,8 @@
   margin: 0 auto;
 }
 
+/* Top part (header) of the page */
+
 .booki-logo {
 
   /* Img resize */
@@ -35,7 +37,7 @@
 
 }
 
-.links {
+.top-links {
   text-decoration: none;
   color: black;
   width: 162px;
@@ -59,11 +61,14 @@
 .main-container {
   display: flex;
   justify-content: flex-start;
+  flex-wrap: wrap;
 
   width: 100%;
   height: 100%;
   padding: 63px 0 0 0;
 }
+
+/* general icons settings */
 
 .fa-solid {
   color: #0065FC;
@@ -72,6 +77,10 @@
 
 .fa-location-dot {
   color: black;
+}
+
+.fa-grey-star {
+  color: #F2F2F2;
 }
 
 .search-bar {
@@ -93,6 +102,8 @@
   border: 1px solid #F2F2F2;
   border-radius: 15px 0px 0px 15px;
 }
+
+/* Police heritage? */
 
 .submit-location {
 
@@ -139,7 +150,7 @@
 
 .filters {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: flex-end;
   font-family: 'Raleway';
   font-style: normal;
@@ -165,4 +176,83 @@
 
 .filter-button:hover {
   background-color: #DEEBFF;
+}
+
+/* main part, clickable cards, container etc */
+
+.card-container {
+
+  width: 30%;
+  height: 199px;
+
+  background: #FFFFFF;
+  border-radius: 20px;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+
+
+  text-decoration: none;
+}
+
+.card-header {
+
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+
+
+
+  color: #000000;
+
+  margin: 4px 0 0 16px;
+}
+
+.card-img {
+  border-radius: 20px 20px 0 0;
+  box-shadow: inset 0px 0px 0px 5px #FFFFFF;
+  max-width: 100%;
+  height: 50%;
+}
+
+.card-text {
+  font-family: 'Raleway';
+
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+
+  color: #000000;
+
+  margin: 9px 0 0 16px;
+}
+
+.offers {
+  height: 626px;
+  width: 880px;
+
+  background: #F2F2F2;
+  border-radius: 20px;
+}
+ 
+/* more icons settings */
+
+.star-rating {
+  display: flex;
+  justify-content: row;
+  width: 100%;
+  margin: 9px 0 0 16px;
+}
+
+.stars {
+  font-size: 12px;
+  margin: 1px;
 }
