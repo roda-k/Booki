@@ -5,9 +5,9 @@
   flex-direction: column;
   align-items: center;
   font-family: 'Raleway', sans-serif;
-  width: 100%;
+  width: calc(100% - 100px);
   max-width: 1400px;
-  margin: 0 auto;
+  margin: 0;
   padding: 0 50px 0 50px;
 }
 
@@ -40,7 +40,7 @@
   /* Img resize */
   width: 61.09px;
   height: 19px;
-  margin-top: 44px;
+  margin-top: 27px;
 }
 
 .header {
@@ -248,7 +248,6 @@
 .filter-button {
   display: flex;
   align-items: center;
-  justify-content: space-around;
 
   height: 50px;
   padding-right: 10px;
@@ -320,7 +319,7 @@
 
   color: #000000;
 
-  margin: 4px 0 0 16px;
+  margin: 0 0 0 16px;
 }
 
 .card-img {
@@ -370,7 +369,7 @@
   align-content: space-around;
 
   height: 626px;
-  width: 30%;
+  width: 37%;
 
   background: #F2F2F2;
   border-radius: 20px;
@@ -402,8 +401,7 @@
 .popular-img {
   border-radius: 20px 0 0 20px;
   padding: 5px;
-  width: 50%;
-  max-height: 100%;
+  width: calc(50% - 5px);
   object-fit: cover;
 }
 
@@ -425,6 +423,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: calc(50% - 10px);
   padding-bottom: 10px;
   padding-right: 10px;
 }
@@ -516,6 +515,7 @@
 
   .filters {
     width: 100%;
+    min-width: 700px;
   }
 
   .offers {
@@ -560,30 +560,38 @@
 @media (max-width: 767px) and (min-width:320px) {
   .bookie-body {
     padding: 0;
+    width: auto;
   }
+
   .header {
     flex-direction: column;
     align-items: center;
   }
+
   .booki-logo {
     margin: 20px 0 20px 0;
   }
+
   .navblock {
     width: 100%;
     display: flex;
     justify-content: center;
   }
+
   .navlist {
     width: 100%;
   }
+
   .top-links {
     align-items: center;
   }
+
   .currentpage {
     justify-content: center;
     border-bottom: 2px solid #F2F2F2;
     width: 100%;
   }
+
   .currentpage:hover a:hover {
     /* Blue when hovered */
     width: 100%;
@@ -591,50 +599,70 @@
     border-bottom: 2px solid #0065FC;
     color: #0065FC;
   }
+
   .main-container {
     padding: inherit;
   }
+
   .top-section {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-content: center;
+    align-items: center;
   }
+
   .text-mobile-align {
     display: inline;
   }
+
   .submit-button {
     display: none;
   }
+
   .submit-icon {
     display: inline;
   }
+
+  .mobile-sizing {
+    width: 100%;
+    margin-left: 10px;
+  }
+
   .filters {
     flex-direction: column;
     align-items: flex-start;
     height: 170px;
+    width: 100%;
   }
+
   .filter-block-one {
     width: auto;
   }
+
   .filter-block-size {
     width: auto;
   }
+
   .filter-button {
     width: 40%;
   }
+
   .filters-display {
     flex-direction: column;
     height: 100%;
     justify-content: space-between;
   }
+
   .offer-main-container {
     flex-direction: column-reverse;
   }
+
   .most-popular {
     width: 100%;
     border-radius: 0;
   }
+
   .offers {
     width: 100%;
     height: 1480px;
@@ -642,42 +670,53 @@
     border-radius: 0;
     margin-bottom: inherit;
   }
+
   .offer-text {
     display: none;
   }
+
   .card-container {
     height: 100%;
     border-radius: 0;
     background-color: #FFFFFF;
     align-content: flex-start;
   }
+
   .card-content {
     margin-bottom: 0;
     width: 90%;
     height: 199px;
     margin-bottom: 10px;
   }
+
   .activities-title {
     padding-left: 45px;
   }
+
   .activities-container {
     flex-direction: column;
     align-items: center;
   }
+
   .activites-img {
     height: 80%;
   }
+
   .activities-info {
     height: 20%;
   }
+
   .page-footer {
     height: auto;
     flex-direction: column;
     padding-left: 50px;
+    width: calc(100% - 50px);
   }
+
   .footer-header {
     margin-bottom: 20px;
   }
+
   .footer-links {
     white-space: nowrap;
   }
