@@ -14,7 +14,7 @@
 <body class="bookie-body">
   <header class="header">
     <img src="assets/imagesBooki/logo/Booki.png" alt="Logo Booki" class="booki-logo">
-    <nav>
+    <nav class="navblock">
       <ul class="navlist">
         <li class="currentpage"><a href="#offers" class="top-links">Hébergements</a></li>
         <li class="currentpage"><a href="#activities" class="top-links">Activités</a></li>
@@ -23,7 +23,7 @@
   </header>
   <main class="main-container">
     <section class="top-section">
-      <h1>Trouvez votre hébergment pour des vacances de rêve</h1>
+      <h1>Trouvez votre hébergement<br class="text-mobile-align">pour des vacances de rêve</h1>
       <p>En plein centre ville ou en pleine nature</p>
       <div class="search-bar">
         <div class="geoloc-button"><i class="fa-solid fa-location-dot"></i></div>
@@ -31,28 +31,33 @@
           <input type="text" name="submitLocation" value="Marseille, France" id="submitLocation"
             class="submit-location">
           <button class="submit-button">Rechercher</button>
+          <button class="submit-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
         </form>
       </div>
       <div class="filters">
         <p>Filtres</p>
-        <div class="filter-block-one">
-          <div class="filter-button">
-            <i class="fa-solid fa-money-bill-wave"></i>
-            <span>Economique</span>
+        <div class="filters-display">
+          <div class="filter-block-one">
+            <div class="filter-button">
+              <i class="fa-solid fa-money-bill-wave"></i>
+              <span>Economique</span>
+            </div>
+            <div class="filter-button">
+              <i class="fa-solid fa-person"></i>
+              <span>Familial</span>
+            </div>
           </div>
-          <div class="filter-button">
-            <i class="fa-solid fa-person"></i>
-            <span>Familial</span>
-          </div>
-        </div>
-        <div class="filter-block-one filter-block-size">
-          <div class="filter-button">
-            <i class="fa-solid fa-heart"></i>
-            <span>Romantique</span>
-          </div>
-          <div class="filter-button">
-            <i class="fa-solid fa-dog"></i>
-            <span>Animaux autorisés</span>
+          <div class="filter-block-one filter-block-size">
+            <div class="filter-button">
+              <i class="fa-solid fa-heart"></i>
+              <span>Romantique</span>
+            </div>
+            <div class="filter-button">
+              <i class="fa-solid fa-dog"></i>
+              <span>Animaux autorisés</span>
+            </div>
           </div>
         </div>
       </div>
@@ -60,12 +65,12 @@
         <div class="info-button">
           <i class="fa-solid fa-info"></i>
         </div>
-        <span class="card-text">Plus de 500 logements sont disponibles dans cette ville</span>
+        <span class="card-text">Plus de 500 logements sont disponibles<br class="text-mobile-align">dans cette ville</span>
       </div>
     </section>
-    <section class="main-container" id="offers">
+    <section class="offer-main-container" id="offers">
       <article class="offers">
-        <h2 class="offer-text">Hébergements à Marseille</h2>
+        <h2 class="offer-header">Hébergements à Marseille</h2>
         <div class="card-container">
           <a href="#" class="card-content">
             <img src="assets/imagesBooki/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
@@ -209,7 +214,7 @@
           </a>
       </article>
     </section>
-    <p class="big-police activities-title">Activités à Marseille</p>
+    <p class="big-police activities-title">Activités à<br class="text-mobile-align"> Marseille</p>
     <section class="activities-container" id="activities">
       <div class="activities-container">
         <a href="#" class="card-content activities-card">

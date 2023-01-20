@@ -13,6 +13,10 @@
 
 /* general class for big police usage */
 
+.text-mobile-align {
+  display: none;
+}
+
 .big-police {
   display: flex;
 
@@ -86,6 +90,16 @@
   padding: 63px 0 0 0;
 }
 
+.offer-main-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  width: 100%;
+  height: 100%;
+  padding: 63px 0 0 0;
+}
+
 .top-section {
   width: 100%;
 }
@@ -123,6 +137,10 @@
 .fa-info {
   font-size: 10px;
   margin: 0;
+}
+
+.fa-magnifying-glass {
+  color: #FFFFFF;
 }
 
 .search-bar {
@@ -190,18 +208,31 @@
   border-radius: 0px 15px 15px 0px;
 }
 
+.submit-icon {
+
+  /* Hand mouse */
+  cursor: pointer;
+
+  height: 50px;
+
+  background: #0065FC;
+  border: none;
+  border-radius: 0px 15px 15px 0px;
+  display: none;
+}
+
 .filters {
   display: flex;
-  align-items: flex-end;
-  font-family: 'Raleway';
-  font-style: normal;
   font-weight: 700;
   font-size: 17px;
-  line-height: 20px;
 
   padding-top: 34px;
-  width: 70%;
   height: 50px;
+}
+
+.filters-display {
+  display: flex;
+  width: 100%;
 }
 
 .filter-block-one {
@@ -316,6 +347,10 @@
   margin-left: 17px;
 }
 
+.offer-header {
+  margin-left: 17px
+}
+
 .offers {
 
   height: 626px;
@@ -369,6 +404,7 @@
   padding: 5px;
   width: 50%;
   max-height: 100%;
+  object-fit: cover;
 }
 
 .popular-content {
@@ -472,7 +508,7 @@
 
 /* media query medium screens */
 
-@media screen and (max-width: 992px) and (min-width: 768px) {
+@media (max-width: 992px) and (min-width:768px) {
 
   .main-container {
     flex-direction: column;
@@ -521,4 +557,128 @@
 
 /* media query phone screen */
 
-@media screen and (max-width: 768px) {}
+@media (max-width: 767px) and (min-width:320px) {
+  .bookie-body {
+    padding: 0;
+  }
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+  .booki-logo {
+    margin: 20px 0 20px 0;
+  }
+  .navblock {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .navlist {
+    width: 100%;
+  }
+  .top-links {
+    align-items: center;
+  }
+  .currentpage {
+    justify-content: center;
+    border-bottom: 2px solid #F2F2F2;
+    width: 100%;
+  }
+  .currentpage:hover a:hover {
+    /* Blue when hovered */
+    width: 100%;
+    border-top: inherit;
+    border-bottom: 2px solid #0065FC;
+    color: #0065FC;
+  }
+  .main-container {
+    padding: inherit;
+  }
+  .top-section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+  .text-mobile-align {
+    display: inline;
+  }
+  .submit-button {
+    display: none;
+  }
+  .submit-icon {
+    display: inline;
+  }
+  .filters {
+    flex-direction: column;
+    align-items: flex-start;
+    height: 170px;
+  }
+  .filter-block-one {
+    width: auto;
+  }
+  .filter-block-size {
+    width: auto;
+  }
+  .filter-button {
+    width: 40%;
+  }
+  .filters-display {
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+  }
+  .offer-main-container {
+    flex-direction: column-reverse;
+  }
+  .most-popular {
+    width: 100%;
+    border-radius: 0;
+  }
+  .offers {
+    width: 100%;
+    height: 1480px;
+    background: #FFFFFF;
+    border-radius: 0;
+    margin-bottom: inherit;
+  }
+  .offer-text {
+    display: none;
+  }
+  .card-container {
+    height: 100%;
+    border-radius: 0;
+    background-color: #FFFFFF;
+    align-content: flex-start;
+  }
+  .card-content {
+    margin-bottom: 0;
+    width: 90%;
+    height: 199px;
+    margin-bottom: 10px;
+  }
+  .activities-title {
+    padding-left: 45px;
+  }
+  .activities-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .activites-img {
+    height: 80%;
+  }
+  .activities-info {
+    height: 20%;
+  }
+  .page-footer {
+    height: auto;
+    flex-direction: column;
+    padding-left: 50px;
+  }
+  .footer-header {
+    margin-bottom: 20px;
+  }
+  .footer-links {
+    white-space: nowrap;
+  }
+}
