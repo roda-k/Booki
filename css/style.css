@@ -25,7 +25,7 @@
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 22px;
   line-height: 21px;
 
   color: #000000;
@@ -110,6 +110,12 @@
 .fa-solid {
   color: #0065FC;
   margin: 10px;
+}
+
+.fa-chart-line {
+  position: absolute;
+  right: 30px;
+  top: 23px;
 }
 
 .star-rating {
@@ -292,7 +298,6 @@
   flex-wrap: wrap;
 
   width: 100%;
-  height: 199px;
 
   background: #F2F2F2;
   border-radius: 20px;
@@ -305,13 +310,24 @@
   border-radius: 20px;
   background-color: #FFFFFF;
   box-shadow: 1px 1px 10px #D9D9D9;
+  padding: 5px 5px 10px 5px;
 
-  height: 100%;
+  height: 199px;
   width: 30%;
 
   margin-bottom: 50px;
 
   text-decoration: none;
+}
+
+.card-top-part {
+  height: 80%;
+}
+
+.card-bottom-part {
+  display: flex;
+  align-items: center;
+  height: 20%;
 }
 
 /* h2 font */
@@ -335,9 +351,8 @@
 
 .card-img {
   border-radius: 20px 20px 0 0;
-  padding: 5px;
-  max-width: 100%;
-  height: calc(50% - 10px);
+  width: 100%;
+  max-height: 90px;
   object-fit: cover;
 }
 
@@ -358,17 +373,19 @@
 }
 
 .offer-header {
-  margin-left: 17px
+  font-size: 22px;
+  margin-left: 17px;
 }
 
 .offers {
 
-  height: 626px;
+  height: 650px;
   width: 60%;
 
   background: #F2F2F2;
   border-radius: 20px;
   margin-bottom: 60px;
+  padding: 10px 0;
 }
 
 /* most popular bloc */
@@ -379,7 +396,9 @@
   flex-direction: row;
   align-content: space-around;
 
-  height: 626px;
+  position: relative;
+  padding: 10px;
+  height: 650px;
   width: 37%;
 
   background: #F2F2F2;
@@ -393,6 +412,11 @@
   padding-left: 8%;
   padding-right: 5%;
   width: 100%;
+}
+
+.popular-spacing {
+  margin: revert;
+  margin-left: 30px;
 }
 
 .popular-container {
@@ -443,7 +467,7 @@
 /* Activities part */
 
 .activities-title {
-  margin-bottom: 10px;
+  margin-bottom: 17px;
 }
 
 .activities-container {
@@ -462,6 +486,7 @@
 
 .activites-img {
   height: 90%;
+  max-height: inherit;
   padding: 0;
 }
 
@@ -528,7 +553,7 @@
 
   .filters {
     width: 100%;
-    min-width: 730  px;
+    min-width: 730px;
   }
 
   .offers {
@@ -539,6 +564,17 @@
     width: 100%;
     height: 278px;
     margin-bottom: 20px;
+    padding: 0;
+
+  }
+
+  .fa-chart-line {
+    right: 5px;
+    top: 10px;
+  }
+
+  .popular-spacing {
+    margin-left: 17px;
   }
 
   .most-popular-header {
@@ -563,6 +599,11 @@
   .card-text {
     font-size: 13px;
   }
+
+  .activities-title {
+    margin: 70px 0 34px 0;
+  }
+
   .activities-card {
     height: 267px;
   }
@@ -703,7 +744,22 @@
 
   .most-popular {
     width: 100%;
+    padding: 10px 0;
     border-radius: 0;
+  }
+
+  .fa-chart-line {
+    right: 6%;
+    top: 3px;
+  }
+
+  .popular-container {
+    padding-bottom: 45px;
+    border-radius: 0;
+  }
+
+  .popular-spacing {
+    margin-left: 8%;
   }
 
   .most-popular-header {
@@ -719,6 +775,10 @@
     margin-bottom: 70px;
   }
 
+  .offer-header {
+    margin-left: 8%;
+  }
+
   .offer-text {
     display: none;
   }
@@ -732,13 +792,13 @@
 
   .card-content {
     margin-bottom: 0;
-    width: 90%;
+    width: 85%;
     height: 199px;
     margin-bottom: 10px;
   }
 
   .activities-title {
-    padding-left: 5%;
+    padding-left: 8%;
   }
 
   .activities-container {
@@ -757,8 +817,8 @@
   .page-footer {
     height: auto;
     flex-direction: column;
-    width: calc(100% - 5%);
-    padding-left: 5%;
+    width: calc(100% - 8%);
+    padding-left: 8%;
   }
 
   .footer-header {
