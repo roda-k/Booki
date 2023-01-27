@@ -7,7 +7,7 @@
   font-family: 'Raleway', sans-serif;
   width: calc(100% - 100px);
   max-width: 1400px;
-  margin: 0;
+  margin: 0 auto;
   padding: 0 50px 0 50px;
 }
 
@@ -238,6 +238,7 @@
   display: flex;
   font-weight: 700;
   font-size: 17px;
+  max-width: 80%;
 
   padding-top: 34px;
   height: 50px;
@@ -251,11 +252,6 @@
 .filter-block-one {
   display: flex;
   justify-content: space-around;
-  width: 40%;
-}
-
-.filter-block-size {
-  width: 50%;
 }
 
 .filter-button {
@@ -266,6 +262,7 @@
   padding-right: 10px;
   border: 2px solid #D9D9D9;
   border-radius: 25px;
+  margin-left: 1rem;
 }
 
 .filter-button:hover {
@@ -312,10 +309,10 @@
   box-shadow: 1px 1px 10px #D9D9D9;
   padding: 5px 5px 10px 5px;
 
-  height: 199px;
+  height: 169px;
   width: 30%;
 
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 
   text-decoration: none;
 }
@@ -379,7 +376,7 @@
 
 .offers {
 
-  height: 650px;
+  height: 550px;
   width: 60%;
 
   background: #F2F2F2;
@@ -398,7 +395,7 @@
 
   position: relative;
   padding: 10px;
-  height: 650px;
+  height: 550px;
   width: 37%;
 
   background: #F2F2F2;
@@ -553,7 +550,7 @@
 
   .filters {
     width: 100%;
-    min-width: 730px;
+    max-width: inherit;
   }
 
   .offers {
@@ -669,6 +666,10 @@
     color: #0065FC;
   }
 
+  .search-bar {
+    width: auto;
+  }
+
   .main-container {
     padding: inherit;
   }
@@ -694,14 +695,13 @@
   }
 
   .mobile-header {
-    width: 100%;
     margin-left: 10px;
     font-size: 22px;
     margin-bottom: 0;
+    text-align: center;
   }
 
   .mobile-subtitle {
-    width: 100%;
     margin-left: 10px;
     font-size: 16px;
   }
@@ -712,6 +712,7 @@
     height: 170px;
     width: 100%;
     padding-top: 20px;
+    max-width: inherit;
   }
 
   .filter-block-one {
@@ -725,12 +726,13 @@
   .filter-button {
     width: 44%;
     max-width: 230px;
+    margin: 0;
   }
 
   .filters-display {
     flex-direction: column;
-    height: 100%;
     justify-content: space-between;
+    height: 100%;
   }
 
   .offer-main-container {
@@ -793,7 +795,6 @@
   .card-content {
     margin-bottom: 0;
     width: 85%;
-    height: 199px;
     margin-bottom: 10px;
   }
 
@@ -804,6 +805,10 @@
   .activities-container {
     flex-direction: column;
     align-items: center;
+  }
+
+  .activities-card {
+    height: 199px;
   }
 
   .activites-img {
